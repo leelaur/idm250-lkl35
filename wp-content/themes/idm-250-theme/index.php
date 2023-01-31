@@ -1,5 +1,5 @@
 <?php get_header();?>
 
-<h1> Please show up  </h1>
+<h1> Hi preeti </h1>
 
 <?php get_footer(); ?>
