@@ -107,8 +107,10 @@ Thumbs.db
 !.github
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
-!wp-content/themes/example-theme/
+!wp-content/themes/idm-250-theme/
 
 
 #??
 !/wp-config
+!/theme??? 
+#help
