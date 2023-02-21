@@ -48,3 +48,45 @@ function theme_scripts_and_styles()
 add_action('wp_enqueue_scripts', 'theme_scripts_and_styles');
 
 add_theme_support ('post-thumbnails');
+
+// add support for pages to have excerpt
+add_post_type_support ('page', 'excerpt');
+
+/**
+ * Function to register custom post types
+ * @link https://developer.wordpress.org/reference/functions/register_post_type/
+ * @return void
+ */
+function register_custom_post_types()
+{
+    // Register Shoes post type
+    register_post_type(
+        'shoes',
+        [
+            'labels' => [
+                'name' => __('Shoes'),
+                'singular_name' => __('Shoe')
+            ],
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => ['slug' => 'shoes'],
+            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+        ]
+    );
+}
+
+add_action('init', 'register_custom_post_types');
+
+
+//menu?
+
+function register_theme_menus()
+{
+    register_nav_menus(
+        [
+            'primary-menu' => 'Primary Menu',
+            'footer-menu' => 'Footer Menu'
+        ]
+    );
+}
+add_action('init', 'register_theme_menus');

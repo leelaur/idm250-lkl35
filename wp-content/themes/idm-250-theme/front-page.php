@@ -14,3 +14,4 @@ if (has_post_thumbnail()) {
 <?php get_template_part('component/content');?>
 
 <?php get_footer(); ?>
+
