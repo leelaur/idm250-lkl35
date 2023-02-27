@@ -3,33 +3,36 @@ const submenu = document.querySelector (".sub-menu");
 const hamburger = document.querySelector ("#hamburger");
 
 
-  //hover on pin button
+  //hover on course nav item
   courses.addEventListener('mouseenter', () => {
-    // window.alert("test");
     submenu.style.display="block";
-    // imgObj.classList.add('fadeInFilter');
-
-    // buttonObj.classList.add('button-hover-on');
-    // buttonObj.classList.remove('button-hover-off');
-    // buttonObj.style.cssText= ' cursor: pointer;';
-    // buttonObj.style.display="block";
-   
   })
 
-   //hover off pin button
+   //hover off course nav item
    courses.addEventListener('mouseleave', () => {
     submenu.style.display="none";
     
   })
-
+  //keep sub items open if hovered on 
   submenu.addEventListener('mouseenter', () => {
     submenu.style.display="block";
     
   })
 
-  // hamburger 
+// hamburger 
 
-  hamburger.addEventListener('onClick', () => {
-    hamburger.classList.toggle("open");
-    
-  })
+hamburger.addEventListener('onClick', () => {
+  hamburger.classList.toggle("open");
+  
+})
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+
+    var x = document.getElementById("navitems");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
