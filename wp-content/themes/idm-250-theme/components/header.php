@@ -7,11 +7,13 @@
         wp_nav_menu (['theme_location' => 'primary-menu']);
         $menu = wp_get_nav_menu_items('primary-menu');
         ?>
+    
+    <!-- nav menu for responsive -->
        <div class="menu-entire">
             <a href="#home" class="active"></a>
             <div id="navitems">
                 <a href="<?php echo '$home'?>">Home</a>
-                <a href="<?php echo '$course'?>">Course</a>
+                <a href="<?php echo '$courses'?>" >Courses</a>
                 <a href="<?php echo '$about'?>">About</a>
                 <a href="<?php echo '$contact'?>">Contact</a>
 
