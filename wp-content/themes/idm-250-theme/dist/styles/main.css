@@ -62,7 +62,7 @@ z-index: 150;
     position: fixed;
     background-color: beige;
     z-index: 50;
-    height: 100px;
+    height: 67px;
     width: 100%;
     top: 0;
     left: 0;
@@ -132,6 +132,7 @@ margin: 20px 0;
 display: flex;
 justify-content: center;
 }
+
 
 /* hamburger menu */
 #hamburger {
