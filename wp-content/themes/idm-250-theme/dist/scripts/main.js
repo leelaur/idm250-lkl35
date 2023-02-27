@@ -1,4 +1,4 @@
-const courses = document.querySelector ("#menu-item-32");
+const courses = document.querySelector ("#menu-item-13");
 const submenu = document.querySelector (".sub-menu");
 const hamburger = document.querySelector ("#hamburger");
 
