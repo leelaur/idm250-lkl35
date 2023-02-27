@@ -1,5 +1,5 @@
-const courses = document.querySelector ("menu-item-13");
-const localcourses = document.querySelector ("menu-item-32");
+const courses = document.querySelector (".menu-item-13"); 
+// local menu-item-32
 const submenu = document.querySelector (".sub-menu");
 const hamburger = document.querySelector ("#hamburger");
 
@@ -15,17 +15,6 @@ const hamburger = document.querySelector ("#hamburger");
     
   })
 
-
-    //FOR LOCAL - hover on course nav item
-    localcourses.addEventListener('mouseenter', () => {
-      submenu.style.display="block";
-    })
-  
-     //FOR LOCAL - hover off course nav item
-     localcourses.addEventListener('mouseleave', () => {
-      submenu.style.display="none";
-      
-    })
 
   //keep sub items open if hovered on 
   submenu.addEventListener('mouseenter', () => {
