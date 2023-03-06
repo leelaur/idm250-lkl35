@@ -16,7 +16,7 @@
     $terms = get_the_terms($currentPostId, 'category');
 
     foreach ($terms as $term) {
-        echo $term->name('');
+        echo $term->name, '';
 
     }
 
