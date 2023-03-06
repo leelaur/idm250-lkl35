@@ -1,6 +1,30 @@
 <?php get_header(); ?>
 <?php get_template_part('components/title');?>
 
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php get_template_part('components/content');?>
+</article>
+
+<h4> 
+    <b> 
+        Categories for this post 
+    </b> 
+</h4>
+
+<?php
+$currentPostId = get_the_id();
+
+$terms = get_the_terms($currentPostId, 'category');
+
+foreach ($terms as $term) {
+    echo $term->name;
+
+}
+
+?>
+
+<br>
+<br>
 <section>
     <div>
         <!-- <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/> -->
@@ -40,29 +64,6 @@
     <h3> Course Fee </h3>
     <p> $15 </p>
 </section>
-
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php get_template_part('components/content');?>
-</article>
-
-<h4> 
-    <b> 
-        Categories for this post 
-    </b> 
-</h4>
-
-<?php
-$currentPostId = get_the_id();
-
-$terms = get_the_terms($currentPostId, 'category');
-
-foreach ($terms as $term) {
-    echo $term->name;
-
-}
-
-?>
 
 <div class="bottom-space"></div>
 <?php get_footer(); ?>
