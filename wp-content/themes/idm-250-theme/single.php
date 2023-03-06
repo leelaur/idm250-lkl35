@@ -5,23 +5,26 @@
 <?php get_template_part('components/content');?>
 </article>
 
-<h4> 
-    <b> 
-        Categories for this post 
-    </b> 
-</h4>
+<div class="categories">
+    <h4> 
 
-<?php
-$currentPostId = get_the_id();
+        Categories for this post: 
+    </h4> 
+        <p class="category-names"> <?php
+    $currentPostId = get_the_id();
 
-$terms = get_the_terms($currentPostId, 'category');
+    $terms = get_the_terms($currentPostId, 'category');
 
-foreach ($terms as $term) {
-    echo $term->name;
+    foreach ($terms as $term) {
+        echo $term->name;
 
-}
+    }
 
-?>
+    ?>
+    </p>
+</div>
+
+
 
 <br>
 <br>
