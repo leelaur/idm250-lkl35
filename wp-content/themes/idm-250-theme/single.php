@@ -3,7 +3,7 @@
 
 <section>
     <div>
-        <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/>
+        <!-- <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/> -->
     </div>
     <div>
         <h3> Course Description </h3>
@@ -13,10 +13,10 @@
 <section>
     <h3> Course Content </h3>
     <ul>
-        <li>List one</li>
-        <li>List two</li>
-        <li>List three</li>
-        <li>List four</li>
+        <li class="list">List one</li>
+        <li class="list">List two</li>
+        <li class="list">List three</li>
+        <li class="list">List four</li>
     </ul>
 </section>
 <section>
@@ -64,4 +64,5 @@ foreach ($terms as $term) {
 
 ?>
 
+<div class="bottom-space"></div>
 <?php get_footer(); ?>
