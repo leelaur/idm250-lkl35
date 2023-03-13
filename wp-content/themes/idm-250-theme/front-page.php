@@ -1,8 +1,23 @@
 <?php get_header();?>
 
-<h1><?php echo get_the_title(); ?></h1>
+<div class="hero">
+    <div class="subtitle">
+    <h1 class="title"><?php echo get_the_title(); ?></h1>
+        <p> This is my front page! <p>
+    </div>
+</div>
 
-<h1> This is my front page! </h1>
+<div class="divider"></div>
+
+<!-- grid -->
+<div class="parent">
+<div class="mini-hero mini-hero1"> </div>
+<div class="mini-hero mini-hero2"> </div>
+<div class="mini-hero mini-hero3"> </div>
+<div class="mini-hero mini-hero4"> </div>
+<div class="mini-hero mini-hero5"> </div>
+<div class="mini-hero mini-hero6"> </div>
+</div>
 
 <?php
 // check if the post or page has a Featured Image assigned to it.
