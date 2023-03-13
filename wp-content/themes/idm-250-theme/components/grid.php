@@ -6,3 +6,5 @@
 <a href="<?php echo site_url()?>/hands-only-cpr-and-aed-training"><div class="mini-hero mini-hero5"> <h2 class="grid-text">Hands Only CPR AED Training</h2></div></a>
 <a href="<?php echo site_url()?>/heartsaver-blended-learning"><div class="mini-hero mini-hero6"><h2 class="grid-text">Heartsaver® CPR First Aid (Blended Learning)</h2></div></a>
 </div>
+
+<div class="bottom-space"></div>
