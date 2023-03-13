@@ -3,12 +3,11 @@
 you can do '404' and it will look for the header-404.php file -->
 
 
-
-<div class="hero">
-    <div class="subtitle">
-        <h1 class="title"> 404</h1>
-        <p> This page does not exist. <p>
-        <button href="<?php site_url()?>/idm250"> Return Home </button>
+<div class="main-hero">
+    <div class="hero-content">
+    <h1 class="title"> 404</h1>
+    <p> This page does not exist. <p>
+       <a href="<?php echo'$home'?>"> <button> Return Home </button></a>
     </div>
 </div>
 
