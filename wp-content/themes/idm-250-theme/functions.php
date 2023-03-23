@@ -61,15 +61,15 @@ function register_custom_post_types()
 {
     // Register Shoes post type
     register_post_type(
-        'shoes',
+        'Courses',
         [
             'labels' => [
-                'name' => __('Shoes'),
-                'singular_name' => __('Shoe')
+                'name' => __('Courses'),
+                'singular_name' => __('Course')
             ],
             'public' => true,
             'has_archive' => true,
-            'rewrite' => ['slug' => 'shoes'],
+            'rewrite' => ['slug' => 'course'],
             'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
         ]
     );

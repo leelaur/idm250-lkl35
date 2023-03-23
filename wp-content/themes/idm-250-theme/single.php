@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('components/title');?>
-
+<?php get_template_part('components/hero');?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php get_template_part('components/content');?>
 </article>
@@ -25,10 +24,10 @@
 </div>
 
 
-
 <br>
 <br>
 <section>
+    <h1> SINGLWE</h1>
     <div>
         <!-- <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/> -->
     </div>
@@ -67,6 +66,7 @@
     <h3> Course Fee </h3>
     <p> $15 </p>
 </section>
+
 
 <div class="bottom-space"></div>
 <?php get_footer(); ?>

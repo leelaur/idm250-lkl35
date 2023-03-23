@@ -6,9 +6,10 @@
 <?php get_template_part('components/hero');?>
 <?php get_template_part('components/content');?>
 
+<h1> PAGE.PHP </h1>
 <section>
     <div>
-        <!-- <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/> -->
+        <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/>
     </div>
     <div>
         <h3> Course Description </h3>
