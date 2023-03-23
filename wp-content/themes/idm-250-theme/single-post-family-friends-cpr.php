@@ -1,15 +1,16 @@
-<!-- For all other pages on your site -->
-<?php get_header();?>
-
-
-<!-- <h1> This is just a page.</h1> -->
+<?php get_header(); ?>
 <?php get_template_part('components/hero');?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php get_template_part('components/content');?>
+</article>
 
-<h1> PAGE.PHP </h1>
+
+<br>
+<br>
 <section>
+    <h1> SINGLWE CUSTOM</h1>
     <div>
-        <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/>
+        <!-- <img src="dist/images/family-and-friends-book2.jpg" alt="Family and Friends book"/> -->
     </div>
     <div>
         <h3> Course Description </h3>
@@ -44,11 +45,9 @@
 </section>
 <section>
     <h3> Course Fee </h3>
-    <p> $15 </p>
+    <p> $16 </p>
 </section>
 
+
 <div class="bottom-space"></div>
-
-
-
 <?php get_footer(); ?>

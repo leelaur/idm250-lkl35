@@ -57,39 +57,24 @@ add_post_type_support ('page', 'excerpt');
  * @link https://developer.wordpress.org/reference/functions/register_post_type/
  * @return void
  */
-function register_custom_post_types()
-{
-    // Register Shoes post type
-    register_post_type(
-        'Courses',
-        [
-            'labels' => [
-                'name' => __('Courses'),
-                'singular_name' => __('Course')
-            ],
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'course'],
-            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-        ]
-    );
-}
-
-add_action('init', 'register_custom_post_types');
-
-
-//menu?
-
-function register_theme_menus()
-{
-    register_nav_menus(
-        [
-            'primary-menu' => 'Primary Menu',
-            'footer-menu' => 'Footer Menu'
-        ]
-    );
-}
-add_action('init', 'register_theme_menus');
+// function register_custom_post_types()
+// {
+//     // Register Courses post type
+//     register_post_type(
+//         'Courses',
+//         [
+//             'labels' => [
+//                 'name' => __('Courses'),
+//                 'singular_name' => __('Course')
+//             ],
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => ['slug' => 'course'],
+//             'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+//             'show_in_rest' => true,
+//         ]
+//     );
+// }
 
 
 /**
