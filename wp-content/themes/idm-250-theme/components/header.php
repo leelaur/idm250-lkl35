@@ -15,6 +15,7 @@
                 <a href="<?php echo '$home'?>">Home</a>
                 <a href="<?php echo '$courses'?>" >Courses</a>
                 <a href="<?php echo '$about'?>">About</a>
+                <a href="<?php echo '$contact'?>">Contact</a>
 
             </div>
 
