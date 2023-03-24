@@ -9,9 +9,10 @@
  get_header();?>
 
 <!-- Gets the title of the page and puts it on the page -->
-<h1> <?php echo get_the_title(); ?> </h1>
+<div class="" data-component="sidebar-template">
+<?php get_template_part('components/content');?>
 
 
-<h1> This is just a sidebar template.</h1>
+<?php get_template_part('components/sidebar'); ?>
 
 <?php get_footer(); ?>

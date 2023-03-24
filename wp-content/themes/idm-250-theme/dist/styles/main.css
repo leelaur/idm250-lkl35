@@ -558,3 +558,7 @@ text-align: left;
 
   }
 }
+
+.widget-area {
+  float: right;
+}
