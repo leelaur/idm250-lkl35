@@ -1,13 +1,11 @@
 <?php get_header();?>
 
-<div class="main-hero">
-    <div class="hero-content">
-    <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p> This is my front page! <p>
-    </div>
+<div class="home">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php get_template_part('components/content');?>
+</article>
 </div>
 
-<div class="divider"></div>
 <?php get_template_part('components/grid');?>
 
 
