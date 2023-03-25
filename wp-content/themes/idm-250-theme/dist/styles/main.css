@@ -592,3 +592,12 @@ text-align: left;
 tr:first-child {
   background-color: #691D1D22;
 }
+
+ol li {
+  margin-bottom: 1rem;
+}
+
+.no-margin{
+  margin: 0;
+  /* padding: 0; */
+}
