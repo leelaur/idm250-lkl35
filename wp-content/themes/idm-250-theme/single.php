@@ -2,7 +2,9 @@
 <?php get_template_part('components/hero');?>
 <div class="content">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php get_template_part('components/content');?>
+   <div class="content">
+     <?php get_template_part('components/content');?>
+</div>
     </article>
 </div>
 

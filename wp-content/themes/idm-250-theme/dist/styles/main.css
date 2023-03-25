@@ -601,3 +601,28 @@ ol li {
   margin: 0;
   /* padding: 0; */
 }
+
+/*widget*/
+
+.widget-area li {
+  list-style: none;
+}
+
+.widget-area{
+  background-color: var(--white);
+  width: 30%;
+  padding: 25px 30px;
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+
+.h2-spacer {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+
+  .widget-area {
+    display: none;
+  }
+}
