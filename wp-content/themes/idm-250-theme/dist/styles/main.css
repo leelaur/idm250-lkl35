@@ -626,3 +626,7 @@ ol li {
     display: none;
   }
 }
+
+.about-width-adj {
+  width: 60%;
+}
