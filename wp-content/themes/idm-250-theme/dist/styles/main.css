@@ -597,7 +597,7 @@ ol li {
   margin-bottom: 1rem;
 }
 
-.no-margin{
+.no-margin a{
   margin: 0;
   /* padding: 0; */
 }
